@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+/* Variables */
+:root {
+    --font-family-1: "Merriweather";
+    --font-family-2: "Licorice";
+    --normal-font: 400;
+    --italics-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #c4c4c4;
+    --bg-color-2: #f4f4f4;
+    --primary-color: #000000;
+    --secondary-color: #bd91ac;
+    --primary-shadow: #dddcfa;
+    --secondary-shadow: #e1e1e1;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.5rem;
+    --transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type:none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: var(--bold-font);
+}
+
+body {
+    font-family: var(--font-family-1);
+}
+
+/* Navigation Bar */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px #939393;
+}
+
+nav h1 {
+    color: var(--primary-color);
+    font-weight: var(--bold-font);
+    font-size: 30px;
+    margin: 4px;
+}
+
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2.5px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 0;
+    padding: 0 32px;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.nav-img {
+    width: 35px;
+    height: 35px;
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+/* Header */
+
+.masthead {
+    height: 750px;
+    /* min-height: 5000px; */
+    background-image: url(/assets/images/bakingTopView.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.head-title {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #bababa;
+    font-family: var(--font-family-2);
+    font-weight: 700;
+    font-size: 150px;
+    text-shadow: 0 3px 8px #000000;
+    margin: 150px 8px 8px;
+}
+
+/* Temperature calculator */
+
+.temp-calculator {
+    background-color: var(--bg-color-2);
+    padding: 32px 0;
+    margin-top: 0.5rem;
+}
+
+.tempcalc-title {
+    color: var(--primary-color);
+    font-family: var(--font-family-2);
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+.tempcalc-details {
+    color: var(--primary-color);
+    font-size: 15px;
+    text-align: center;
+}
+
+.temp-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+
+.temp-result-display {
+    font-weight: var(--bold-font);
+}
+
+form {
+    padding: 0 20px;
+}
+
+/* Table of conversions */
+
+.table-of-conversions {
+    background-color: var(--bg-color-2);
+    padding: 32px 0;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.toc-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toc-title {
+    color: var(--primary-color);
+    font-family: var(--font-family-2);
+    font-size: 60px;
+    text-align: center;
+}
+
+.toc-title-2 {
+    color: var(--primary-color);
+}
+
+.toc-container {
+    padding: 10px;
+}
+
+.toc-card {
+    background-color: var(--bg-color-2);
+    border-radius: 20px;
+    box-shadow: 0 3px 10px var(--bg-color);
+    padding: 20px;
+    margin: 10px;
+}
+
+th {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+td, th {
+    padding: 0.1rem 0.5rem;
+    justify-content: center;
+}
+
+/* My Favourite Recepies */
+.fave-recepies {
+    background-color: var(--bg-color-2);
+    padding: 32px 0;
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+.fave-recepies-title {
+    color: var(--primary-color);
+    font-family: var(--font-family-2);
+    font-size: 60px;
+    text-align: center;
+}
+
+.fr-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fr-container {
+    padding: 10px;
+    width: 350px;
+}
+
+.fr-images {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.75s ease;
+    backface-visibility: hidden;
+}
+
+.fr-container:hover .fr-images {
+    opacity: 0.35
+}
+
+.fr-mini-title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.fr-source {
+    text-align: center;
+}
