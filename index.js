@@ -9,7 +9,20 @@ function solve() {
     document.getElementById("tempC").innerHTML = result;
 }
 
-// Function that displays value
-// function dis(val) {
-//     document.getElementById("result").value+=val
-// }
+// // Nav hamburger selections
+// const burger = document.querySelector("#burger-menu");
+// const ul = document.querySelector("nav ul");
+// const nav = document.querySelector("nav");
+
+// burger.addEventListener("click", () => {
+//     ul.classList.toggle("show");
+// });
+
+// // close hamburger menu when a link is clicked
+// const navLink = document.querySelectorAll(".nav-link");
+
+// navLink.forEach((link) => 
+//     link.addEventListener("click", () => {
+//         ul.classList.remove("show");
+//     })
+// );
