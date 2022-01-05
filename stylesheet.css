@@ -9,7 +9,7 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #c4c4c4;
-    --bg-color-2: #f4f4f4;
+    --bg-color-2: #fafafa;
     --primary-color: #000000;
     --secondary-color: #bd91ac;
     --primary-shadow: #dddcfa;
@@ -153,11 +153,28 @@ nav ul li {
 .temp-container {
     display: flex;
     /* flex-direction: column; */
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.temp-input {
+    padding: 5px;
+    margin: 5px 15px;
+}
+
+.temp-output {
+    padding: 0 15px;
 }
 
 .temp-result-display {
     font-weight: var(--bold-font);
+}
+
+.result-card {
+    background-color: var(--bg-color-2);
+    border-bottom: 2px solid;
+    border-color: var(--primary-color);
+    padding: 5px;
+    margin: 5px;
 }
 
 form {
@@ -261,4 +278,16 @@ td, th {
 
 .fr-source {
     text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-color-2);
+    padding: 0.75rem;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+.copy {
+    margin-bottom: 0;
 }
